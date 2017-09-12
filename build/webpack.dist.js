@@ -14,6 +14,7 @@ const config = merge(base, {
     filename: options.isProduction ? 'REPOSITORY_NAME.min.js' : 'REPOSITORY_NAME.js',
     path: options.paths.output.main,
     library: 'REPOSITORY_NAME',
+    libraryExport: 'default',
     libraryTarget: 'umd'
   },
 
